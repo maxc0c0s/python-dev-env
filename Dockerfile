@@ -1,7 +1,7 @@
 FROM python:latest
 
-# The project root location from the Dockerfile perspective
-ENV PROJECT_ROOT = .
+# The project root location from the build context perspective
+ARG PROJECT_ROOT=.
 
 RUN pip install coverage
 
